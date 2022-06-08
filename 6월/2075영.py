@@ -10,9 +10,4 @@ for _ in range(n) :
         if len(q) > n :
             heapq.heappop(q)
 
-# q.sort()
-# result = []
-# for i in q :
-    
-
 print(q[0]) 
