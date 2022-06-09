@@ -36,8 +36,23 @@ def dfs(index,c) :
             result[c] = num2
             dfs(index+2, c+1)
             visited[num2] = False
-            #뺴는 부분없음. 왜???s
-
 dfs(0,0)
+
+
+
+
+    # if visited[int(kri[i])] == 0 :
+    #     result.append(kri[i])
+    #     visited[int(kri[i])] = 1
+    #     dfs(i+1)
+    #     result.pop()
+    #     visited[int(kri[i])] = 0
+    
+    # if visited[int(kri[i]+kri[i+1])] == 0 :
+    #     result.append(kri[i])
+    #     visited[int(kri[i]+kri[i+1])] = 1
+    #     dfs(i+2)
+    #     result.pop()
+    #     visited[int(kri[i]+kri[i+1])] = 0
 
 ## 하나로 쪼개는 경우 두개로 쪼개는 경우?
