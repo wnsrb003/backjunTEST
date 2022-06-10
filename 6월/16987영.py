@@ -17,17 +17,20 @@ def hit(index) :
     
     if eggs[index][0] <= 0 : 
         hit(index+1)
-    else :
-        for i in range(n) :
-            if i == index : continue
-            if eggs[i][0] <= 0 : continue
-            else :
-                eggs[index][0] -= eggs[i][1] 
-                eggs[i][0] -= eggs[index][1]
-                print(eggs)
-                hit(index+1)
-                eggs[index][0] += eggs[i][1] 
-                eggs[i][0] += eggs[index][1]
+        return 
+    
+    
+
+    for i in range(n) :
+        if i == index : continue
+        if eggs[i][0] <= 0 : continue
+        
+        eggs[index][0] -= eggs[i][1] 
+        eggs[i][0] -= eggs[index][1]
+        print(eggs)
+        hit(index+1)
+        eggs[index][0] += eggs[i][1] 
+        eggs[i][0] += eggs[index][1]
 
 hit(0)
 print(maxi)
