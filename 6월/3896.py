@@ -1,3 +1,4 @@
+from collections import defaultdict
 import sys
 
 t = int(sys.stdin.readline())
@@ -38,3 +39,5 @@ for _ in range(t) :
 # print(arr[23])
 # print(arr[11])
 # print(arr[10])
+
+defaultdict
